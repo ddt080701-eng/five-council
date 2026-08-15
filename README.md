@@ -75,19 +75,6 @@ git clone https://github.com/ddt080701/five-council.git ~/.codex/skills/five-cou
 [AI 自动生成 5 个顾问的独立审查 → 交叉审查 → 主席综合结论]
 ```
 
-## 与 llm-council 的区别
-
-| | [llm-council](https://github.com/karpathy/llm-council) (Karpathy) | five-council (本项目) |
-|---|---|---|
-| 需要 API | 是（OpenRouter） | 不需要 |
-| 模型多样性 | 真实多模型（GPT/Gemini/Claude/Grok） | 同一模型模拟 5 角色 |
-| 成本 | 每次审查消耗多模型 API 调用 | 零成本 |
-| 配置 | 需安装 FastAPI + React + API key | 零配置，即装即用 |
-| 角色 | 匿名评审 + Chairman 排名 | 5 个有明确分工的顾问 + 主席 |
-
-**代价**：缺少真正的模型多样性（5 个顾问本质上是同一个模型）
-**优势**：零成本、零配置、即时可用、角色可定制
-
 ## 自定义
 
 修改 `SKILL.md` 中的顾问角色定义即可。你可以：
